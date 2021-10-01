@@ -3,12 +3,30 @@
 <head>
     <style>
 
+        /* Descendent Combinator */
         form h1 {
-            color: #009;
+            color: hsl(231, 48%, 48%);
         }
 
-        form p {
-            font-size: 22px;
+        /* Child Combinator */
+        form > p {
+            font-size: 36px;
+            color: #c2185b;
+        }
+
+        /* Adjacent Sibling Combinator */
+        label + input {
+            display: block;
+            clear: both;
+        }
+
+        * + fieldset {
+            margin: 5em 0;
+        }
+
+        /* General Sibling Combinator */
+        label ~ input {
+            display: block;
         }
     </style>
 
